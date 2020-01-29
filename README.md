@@ -12,28 +12,12 @@ The code is divided as follows:
 * The [MArc_TensorFlow.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow.py) python file contains the code to run experiment.
 * The [MArc_TensorFlow_version_test.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow_version_test.py) python file contains the code to run experiment of test.
 
-To run a model on one dataset you should issue the following command: 
-```
-python3 main.py TSC Coffee fcn _itr_8
-```
-which means we are launching the [fcn](https://github.com/hfawaz/dl-4-tsc/blob/master/classifiers/fcn.py) model on the univariate UCR archive for the Coffee dataset (see [constants.py](https://github.com/hfawaz/dl-4-tsc/blob/master/utils/constants.py) for a list of possible options).
-
-## Prerequisites
-All python packages needed are listed in [pip-requirements.txt](https://github.com/hfawaz/dl-4-tsc/blob/master/utils/pip-requirements.txt) file and can be installed simply using the pip command. 
-The code now uses Tensorflow 2.0.
-The results in the paper were generated using the Tensorflow 1.14 implementation which can be found [here](https://github.com/hfawaz/dl-4-tsc/commit/7ab94a02aedf3a9688e248603bd43c5d405f039b). 
-Using Tensorflow 2.0 should give the same results.  
-Now [InceptionTime](https://github.com/hfawaz/InceptionTime) is included in the mix, feel free to send a pull request to add another classifier. 
+## Pre-requisites
+The code uses Tensorflow 2.0.
 
 * [numpy](http://www.numpy.org/)  
-* [pandas](https://pandas.pydata.org/)  
-* [sklearn](http://scikit-learn.org/stable/)  
 * [scipy](https://www.scipy.org/)  
-* [matplotlib](https://matplotlib.org/)  
 * [tensorflow-gpu](https://www.tensorflow.org/)  
-* [keras](https://keras.io/)  
-* [h5py](http://docs.h5py.org/en/latest/build.html)
-* [keras_contrib](https://www.github.com/keras-team/keras-contrib.git)
 
 ## Results
 I added the [results](https://github.com/hfawaz/dl-4-tsc/blob/master/results/results-ucr-128.csv) on the 128 datasets from the [UCR archive 2018](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/).
@@ -154,23 +138,3 @@ These results should give an insight of deep learning for TSC therefore encourag
 
 If you would like to generate the critical difference diagrams using Wilcoxon Signed Rank test with Holm's alpha correction, check out [the cd-diagram repository](https://github.com/hfawaz/cd-diagram). 
 
-## Reference
-
-If you re-use this work, please cite:
-
-```
-@article{IsmailFawaz2018deep,
-  Title                    = {Deep learning for time series classification: a review},
-  Author                   = {Ismail Fawaz, Hassan and Forestier, Germain and Weber, Jonathan and Idoumghar, Lhassane and Muller, Pierre-Alain},
-  journal                  = {Data Mining and Knowledge Discovery},
-  Year                     = {2019},
-  volume                   = {33},
-  number                   = {4},
-  pages                    = {917--963},
-}
-```
-## Acknowledgement
-
-We would like to thank the providers of the [UCR/UEA archive](http://timeseriesclassification.com/TSC.zip). 
-We would also like to thank NVIDIA Corporation for the Quadro P6000 grant and the Mésocentre of Strasbourg for providing access to the cluster.
-We would also like to thank [François Petitjean](https://www.francois-petitjean.com/) and [Charlotte Pelletier](https://sites.google.com/site/charpelletier/) for the fruitful discussions, their feedback and comments while writing this paper.
