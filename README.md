@@ -4,9 +4,8 @@ This is the repository for our paper titled "Soft Biometry Using Convolutional N
 ![architecture cnn](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/architecture/architecture.jpg)
 
 ## Data 
-The data used in this project comes from two sources: 
-* The [UCR/UEA archive](http://timeseriesclassification.com/TSC.zip), which contains the 85 univariate time series datasets. 
-* The [MTS archive](http://www.mustafabaydogan.com/files/viewcategory/20-data-sets.html), which contains the 13 multivariate time series datasets.
+The data used in this project comes from the source: 
+* The [PETA dataset](http://mmlab.ie.cuhk.edu.hk/projects/PETA.html), consists of 19000 images.
 
 ## Code 
 The code is divided as follows: 
