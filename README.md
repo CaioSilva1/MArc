@@ -9,9 +9,8 @@ The data used in this project comes from the source:
 
 ## Code 
 The code is divided as follows: 
-* The [main.py](https://github.com/hfawaz/dl-4-tsc/blob/master/main.py) python file contains the necessary code to run an experiement. 
-* The [utils](https://github.com/hfawaz/dl-4-tsc/tree/master/utils) folder contains the necessary functions to read the datasets and visualize the plots.
-* The [classifiers](https://github.com/hfawaz/dl-4-tsc/tree/master/classifiers) folder contains nine python files one for each deep neural network tested in our paper. 
+* The [MArc_TensorFlow.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow.py) python file contains the code to run experiment.
+* The [MArc_TensorFlow_version_Test.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow_version_test.py) python file contains the code to run experiment of test.
 
 To run a model on one dataset you should issue the following command: 
 ```
