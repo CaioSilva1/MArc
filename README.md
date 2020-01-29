@@ -20,15 +20,43 @@ The code uses Tensorflow 2.0.
 * [tensorflow-gpu](https://www.tensorflow.org/)  
 
 ## Results
-I added the [results](https://github.com/hfawaz/dl-4-tsc/blob/master/results/results-ucr-128.csv) on the 128 datasets from the [UCR archive 2018](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/).
-Our [results](https://github.com/hfawaz/dl-4-tsc/tree/master/results) in the paper showed that a deep residual network architecture performs best for the time series classification task. 
+The graph shows that the MArc model learns faster, that is, with 300 training epochs, our model has already learned and saturated inaccuracy, while the CNN-OM model, even with 1000 training epochs, it is still learning.
+![accuracy curve MArc model](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/performance/performance.png)
+
+
+Our results in the paper showed that a deep residual network architecture performs best for the time series classification task. 
 
 The following table contains the averaged accuracy over 10 runs of each implemented model on the UCR/UEA archive, with the standard deviation between parentheses. 
 
-| Datasets                       | MLP       | FCN        | ResNet     | Encoder    | MCNN       | t-LeNet   | MCDCNN     | Time-CNN  | TWIESN     | 
+| Gender                         | 0.003     | 0.01       |
+|--------------------------------|-----------|------------|
+| Male                           | 68.4(7.1) | 62.7(6.1)  |
+| Female                         | 39.7(1.9) | 84.4(0.7)  |
+
+| Upper Clothes                  | MLP       | FCN        | ResNet     | Encoder    | MCNN       | t-LeNet   | MCDCNN     | Time-CNN  | TWIESN     | 
 |--------------------------------|-----------|------------|------------|------------|------------|-----------|------------|-----------|------------| 
-| 50words                        | 68.4(7.1) | 62.7(6.1)  | 74.0(1.5)  | 72.3(1.0)  | 22.0(24.3) | 12.5(0.0) | 58.9(5.3)  | 62.1(1.0) | 49.6(2.6)  | 
-| Adiac                          | 39.7(1.9) | 84.4(0.7)  | 82.9(0.6)  | 48.4(2.5)  | 2.2(0.6)   | 2.0(0.0)  | 61.0(8.7)  | 37.9(2.0) | 41.6(4.5)  | 
+| Short                        | 68.4(7.1) | 62.7(6.1)  | 74.0(1.5)  | 72.3(1.0)  | 22.0(24.3) | 12.5(0.0) | 58.9(5.3)  | 62.1(1.0) | 49.6(2.6)  | 
+| Long                          | 39.7(1.9) | 84.4(0.7)  | 82.9(0.6)  | 48.4(2.5)  | 2.2(0.6)   | 2.0(0.0)  | 61.0(8.7)  | 37.9(2.0) | 41.6(4.5)  | 
+
+| Lower Clothes                  | MLP       | FCN        | ResNet     | Encoder    | MCNN       | t-LeNet   | MCDCNN     | Time-CNN  | TWIESN     | 
+|--------------------------------|-----------|------------|------------|------------|------------|-----------|------------|-----------|------------| 
+| Shorts                        | 68.4(7.1) | 62.7(6.1)  | 74.0(1.5)  | 72.3(1.0)  | 22.0(24.3) | 12.5(0.0) | 58.9(5.3)  | 62.1(1.0) | 49.6(2.6)  | 
+| Pants                          | 39.7(1.9) | 84.4(0.7)  | 82.9(0.6)  | 48.4(2.5)  | 2.2(0.6)   | 2.0(0.0)  | 61.0(8.7)  | 37.9(2.0) | 41.6(4.5)  | 
+
+| Carrying object                | MLP       | FCN        | ResNet     | Encoder    | MCNN       | t-LeNet   | MCDCNN     | Time-CNN  | TWIESN     | 
+|--------------------------------|-----------|------------|------------|------------|------------|-----------|------------|-----------|------------| 
+| Nothing                        | 68.4(7.1) | 62.7(6.1)  | 74.0(1.5)  | 72.3(1.0)  | 22.0(24.3) | 12.5(0.0) | 58.9(5.3)  | 62.1(1.0) | 49.6(2.6)  | 
+| Something                          | 39.7(1.9) | 84.4(0.7)  | 82.9(0.6)  | 48.4(2.5)  | 2.2(0.6)   | 2.0(0.0)  | 61.0(8.7)  | 37.9(2.0) | 41.6(4.5)  | 
+
+
+
+
+
+
+
+
+
+
 | ArrowHead                      | 77.8(1.2) | 84.3(1.5)  | 84.5(1.2)  | 80.4(2.9)  | 33.9(4.7)  | 30.3(0.0) | 68.5(6.7)  | 72.3(2.6) | 65.9(9.4)  | 
 | Beef                           | 72.0(2.8) | 69.7(4.0)  | 75.3(4.2)  | 64.3(5.0)  | 20.0(0.0)  | 20.0(0.0) | 56.3(7.8)  | 76.3(1.1) | 53.7(14.9) | 
 | BeetleFly                      | 87.0(2.6) | 86.0(9.7)  | 85.0(2.4)  | 74.5(7.6)  | 50.0(0.0)  | 50.0(0.0) | 58.0(9.2)  | 89.0(3.2) | 73.0(7.9)  | 
