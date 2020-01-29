@@ -1,7 +1,7 @@
 # Soft Biometry Using Convolutional Networks
 This is the repository for our paper titled "Soft Biometry Using Convolutional Networks: Human Attributes Classification and Object Carrying Detection".
 
-![architecture cnn](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/architecture/architecture.jpg)
+![architecture cnn](https://github.com/CaioSilva1/MArc/blob/master/architecture/architecture.jpg)
 
 ## Data 
 The data used in this project comes from the source: 
@@ -9,8 +9,8 @@ The data used in this project comes from the source:
 
 ## Code 
 The code is divided as follows: 
-* The [MArc_TensorFlow.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow.py) python file contains the code to run experiment.
-* The [MArc_TensorFlow_version_test.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow_version_test.py) python file contains the code to run experiment of test.
+* The [MArc_TensorFlow.py](https://github.com/CaioSilva1/MArc/blob/master/MArc_TensorFlow.py) python file contains the code to run experiment.
+* The [MArc_TensorFlow_version_test.py](https://github.com/CaioSilva1/MArc/blob/master/MArc_TensorFlow_version_test.py) python file contains the code to run experiment of test.
 
 ## Pre-requisites
 The code uses Tensorflow 2.0.
@@ -21,7 +21,7 @@ The code uses Tensorflow 2.0.
 
 ## Results
 The graph shows that the MArc model learns faster, that is, with 300 training epochs, our model has already learned and saturated inaccuracy, while the CNN-OM model, even with 1000 training epochs, it is still learning.
-![accuracy curve MArc model](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/performance/performance.png)
+![accuracy curve MArc model](https://github.com/CaioSilva1/MArc/blob/master/performance/performance.png)
 
 
 Our results in the paper showed that a deep residual network architecture performs best for the time series classification task. 
@@ -30,7 +30,7 @@ The following table contains the averaged accuracy over 10 runs of each implemen
 
 | Gender                         | 0.003     | 0.01       |
 |--------------------------------|-----------|------------|
-| Male                           | 68.4(7.1) | 62.7(6.1)  |
+| Male                           | 77.91(7.1) | 82.45(6.1)  |
 | Female                         | 39.7(1.9) | 84.4(0.7)  |
 
 | Upper Clothes                  | MLP       | FCN        | ResNet     | Encoder    | MCNN       | t-LeNet   | MCDCNN     | Time-CNN  | TWIESN     | 
