@@ -10,7 +10,7 @@ The data used in this project comes from the source:
 ## Code 
 The code is divided as follows: 
 * The [MArc_TensorFlow.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow.py) python file contains the code to run experiment.
-* The [MArc_TensorFlow_version_Test.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow_version_test.py) python file contains the code to run experiment of test.
+* The [MArc_TensorFlow_version_Test.py](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/MArc_TensorFlow_version_tes.py) python file contains the code to run experiment of test.
 
 To run a model on one dataset you should issue the following command: 
 ```
