@@ -1,7 +1,7 @@
 # Soft Biometry Using Convolutional Networks
 This is the repository for our paper titled "Soft Biometry Using Convolutional Networks: Human Attributes Classification and Object Carrying Detection".
 
-![architecture cnn](https://github.com/CaioSilva1/IJCNN_MArc/tree/master/architecture/architecture.jpg)
+![architecture cnn](https://github.com/CaioSilva1/IJCNN_MArc/blob/master/architecture/architecture.jpg)
 
 ## Data 
 The data used in this project comes from two sources: 
