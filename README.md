@@ -24,9 +24,9 @@ The graph shows that the MArc model learns faster, that is, with 300 training ep
 ![accuracy curve MArc model](https://github.com/CaioSilva1/MArc/blob/master/performance/performance.png)
 
 
-Our results in the paper showed that a deep residual network architecture performs best for the time series classification task. 
+Our results in the paper showed that a proposed CNN approach (MArc) has provided promising results and performs best for the soft biometry classification.
 
-The following table contains the averaged accuracy over 10 runs of each implemented model on the UCR/UEA archive, with the standard deviation between parentheses. 
+The following table contains the averaged accuracy over 30 runs of the MArc model on the PETA dataset, with the standard deviation between parentheses. 
 
 | Gender                         | 0.003           | 0.01            |
 |--------------------------------|-----------------|-----------------|
@@ -48,9 +48,4 @@ The following table contains the averaged accuracy over 10 runs of each implemen
 | Nothing                        | 50.30(1.82)     | **55.76**(1.23) |
 | Something                      | **65.53**(1.68) | 58.83(1.37)     |
 
-
-
-
-
-
-
+These results should give an insight of deep learning for soft biometrics classification in surveillance systems applications.
